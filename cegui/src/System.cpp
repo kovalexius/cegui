@@ -103,9 +103,9 @@ const String System::EventDisplaySizeChanged( "DisplaySizeChanged" );
 const String System::EventRenderedStringParserChanged("RenderedStringParserChanged");
 
 // Holds name of default XMLParser
-String System::d_defaultXMLParserName(STRINGIZE(CEGUI_DEFAULT_XMLPARSER));
+String System::d_defaultXMLParserName = String(STRINGIZE(CEGUI_DEFAULT_XMLPARSER));
 // Holds name of default ImageCodec
-String System::d_defaultImageCodecName(STRINGIZE(CEGUI_DEFAULT_IMAGE_CODEC));
+String System::d_defaultImageCodecName = String(STRINGIZE(CEGUI_DEFAULT_IMAGE_CODEC));
 
 
 /*************************************************************************
